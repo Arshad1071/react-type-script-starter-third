@@ -6,9 +6,9 @@ interface Iprofile {
   name?: string;
 }
 
-const profile: FC = ({
+const profile: FC<Iprofile> = ({
   name = 'Arshad',
-}: any): ReactElement => {
+}): ReactElement => {
   return (
     <Box
       sx={{
