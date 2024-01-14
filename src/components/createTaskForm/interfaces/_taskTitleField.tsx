@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC, ReactElement } from 'react';
 
-const TaskTitleField = () => {
+const TaskTitleField: FC = (): ReactElement => {
   return <div>_taskTitleField</div>;
 };
 

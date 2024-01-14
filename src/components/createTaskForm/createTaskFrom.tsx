@@ -1,6 +1,8 @@
 import React, { FC, ReactElement } from 'react';
 
 import { Box, Typography } from '@mui/material';
+import TaskDiscriptionField from './interfaces/_taskDiscriptionField';
+import TaskTitleField from './interfaces/_taskTitleField';
 
 const CreateTaskFrom: FC = (): ReactElement => {
   return (
@@ -13,6 +15,8 @@ const CreateTaskFrom: FC = (): ReactElement => {
       my={6}
     >
       <Typography>Create A Task</Typography>
+      <TaskTitleField />
+      <TaskDiscriptionField />
     </Box>
   );
 };
