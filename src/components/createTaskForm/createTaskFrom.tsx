@@ -1,11 +1,20 @@
 import React, { FC, ReactElement } from 'react';
-import PropTypes from 'prop-types';
-import { Box } from '@mui/material';
 
-const createTaskFrom: FC = (): ReactElement => {
-  return <Box></Box>;
+import { Box, Typography } from '@mui/material';
+
+const CreateTaskFrom: FC = (): ReactElement => {
+  return (
+    <Box
+      display="flxe"
+      flexDirection="column"
+      alignItems="flex-start"
+      width="100%"
+      px={4}
+      my={6}
+    >
+      <Typography>Create A Task</Typography>
+    </Box>
+  );
 };
 
-createTaskFrom.propTypes = {};
-
-export default createTaskFrom;
+export default CreateTaskFrom;
